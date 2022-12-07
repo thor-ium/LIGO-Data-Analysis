@@ -1,0 +1,132 @@
+%% Full length research paper template
+%% Created by Simon Hengchen and Nilo Pedrazzini for the Journal of Open Humanities Data (https://openhumanitiesdata.metajnl.com)
+
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage{johd}
+
+\title{ASTR3800 Final Project Writeup}
+
+\author{Thor Breece}
+
+\date{12/8/2022} %leave blank
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract} 
+\noindent  
+Through a combination of data science, statistical analysis, machine learning and intuition, I analyzed data collected
+by LIGO. Throughout the project, I analyzed the Event Demographics of the LIGO data as a whole, the neutron star - neutron star merger GW170817, and discovered 
+hidden correlations between variables within the data set. This helped me to understand the limitations of LIGO, how standard sirens, often sources of LIGO GW signals, 
+are used to calculate the hubble constant, and the correlation between the Signal to Noise ratio and Luminosity Distance.
+\end{abstract}
+
+
+
+\section{Gravitational Waves and LIGO}
+
+
+Describe the context and motivation of your paper.
+
+\subsection{In-text citations}
+This journal uses a style based on the APA system (see \href{https://openhumanitiesdata.metajnl.com/about/submissions/#References}{here}). \\
+The following are some basic citation commands in \LaTeX: \\
+
+\noindent
+\verb|\citet| $\rightarrow$ \citet{jenset&mcgil}\\
+\verb|\citet| $\rightarrow$ \citet{australiashealth}\\
+\verb|\citet| $\rightarrow$ \citet{shree-a}\\
+\verb|\citep| $\rightarrow$ \citep{fabricius-hansen2012b}\\
+\verb|\citealp| $\rightarrow$ (\citealp{eckhoff2018a})\\
+\verb|\citealp| $\rightarrow$ (\citealp{eckhoff2018a}; \citealp{fabricius-hansen2012b}; \citealp{shree-a})\\
+
+\subsubsection{Other simple functions}
+To add bullet points:
+
+\begin{itemize}
+    \item Some point
+    \item Another point
+\end{itemize}
+
+\noindent Or numbered points:
+
+\begin{itemize}
+    \item[1.] Some numbered point
+    \item[2.] Another numbered point
+\end{itemize}
+
+\noindent This is an example of footnote\footnote{This is a footnote}. \\
+
+\noindent This is a simple table:
+
+\begin{table}[H]
+\centering % Label your table accordingly
+\caption{\label{tab1} A caption.}
+\begin{tabular}{cccc}
+\hline
+1 & 2 & 3 & 4 \\
+\hline
+a & b & c & d\\
+e & f & g & h\\
+\hline
+\end{tabular}
+\end{table}
+
+\noindent Please refer to your table using: Table \ref{tab1}.\\
+
+\noindent To add a figure, upload the figure into the \texttt{images} folder, and then embed it:
+
+\begin{figure}[H]
+\centering
+\includegraphics{images/image.jpeg}
+\caption{\label{fig1}JOHD's logo.}
+\end{figure}
+
+\noindent To resize the figure:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.2\textwidth]{images/image.jpeg}
+\caption{\label{fig2}JOHD's logo.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{images/image.jpeg}
+\caption{\label{fig3}JOHD's logo.}
+\end{figure}
+
+\noindent Please refer to your figures as: Figure \ref{fig1}, Figure \ref{fig2}, etc.
+
+
+\section{Dataset description}
+Here you can provide, if applicable, information about the dataset(s) whose creation, collection, management, access, processing or analysis have been discussed in this paper, following this schema:
+\paragraph{Object name} Typically the name of the file or file set in the repository.
+\paragraph{Format names and versions} E.g., ASCII, CSV, Autocad, EPS, JPEG, Excel, SQL, etc.
+\paragraph{Creation dates} The start and end dates of when the data was created (YYYY-MM-DD).
+\paragraph{Dataset creators} Please list anyone who helped to create the dataset (who may or may not be an author of the data paper), including their roles (using and affiliations).
+\paragraph{Language} Languages used in the dataset (i.e., for variable names etc.).
+\paragraph{License} The open license under which the data has been deposited (e.g., CC0). 
+\paragraph{Repository name} The name of the repository to which the data is uploaded. E.g., Figshare, Dataverse, etc. 
+\paragraph{Publication date} If already known, the date in which the dataset was published in the repository (YYYY-MM-DD).
+
+\section{Method}
+Describe the methods used in the study.
+
+\section{Results and discussion}
+Describe and discuss the results of the study.
+
+\section{Implications/Applications}
+Provide information about the implications of this research and/or how it can be applied.
+
+\section*{Acknowledgements}
+Please add any relevant acknowledgements to anyone else that assisted with the project in which the data was created but did not work directly on the data itself.
+
+
+\bibliographystyle{johd}
+\bibliography{bib}
+
+\end{document}
